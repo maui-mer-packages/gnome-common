@@ -1,5 +1,5 @@
 Name:           gnome-common
-Version:        3.6.0
+Version:        3.12.0
 Release:        1
 Summary:        Useful things common to building gnome packages from scratch
 
@@ -46,6 +46,9 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{_datadir}/%{name}
 
 %changelog
+* Sat Jun 14 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com> - 3.12.0-1
+- Update to 3.12.0
+
 * Tue Oct 16 2012 Kalev Lember <kalevlember@gmail.com> - 3.6.0-1
 - Update to 3.6.0
 
