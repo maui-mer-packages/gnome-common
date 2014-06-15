@@ -1,6 +1,6 @@
 Name:           gnome-common
 Version:        3.12.0
-Release:        1
+Release:        2
 Summary:        Useful things common to building gnome packages from scratch
 
 Group:          Development/Tools
@@ -40,12 +40,15 @@ cp doc/usage.txt usage.txt
 make install DESTDIR=$RPM_BUILD_ROOT
 
 %files
-%doc doc-README README usage.txt
+%doc doc-README usage.txt
 %{_bindir}/*
 %{_datadir}/aclocal/*
 %{_datadir}/%{name}
 
 %changelog
+* Sun Jun 15 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com> - 3.12.0-2
+- Fix %doc
+
 * Sat Jun 14 2014 Pier Luigi Fiorini <pierluigi.fiorini@gmail.com> - 3.12.0-1
 - Update to 3.12.0
 
